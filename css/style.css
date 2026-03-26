@@ -6,7 +6,7 @@
 }
 
 /* common */
-.html {
+.html i {
   color: #e44b20;
 }
 .css i {
@@ -27,17 +27,18 @@
 
 /* header */
 .header {
-  display: none;
+  /* display: none; */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
 }
 .header.on {
-  background-color: #ffffff;
-  box-shadow: 0 0 5px var(--main-color);
-  opacity: 0.8;
-  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .header-inner {
   width: 1300px;
