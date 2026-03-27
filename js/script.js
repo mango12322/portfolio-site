@@ -29,3 +29,19 @@ topArrow.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+// on/off
+const header = document.querySelector(".header");
+const github = document.querySelector(".github");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    header.classList.add("on");
+    topArrow.style.display = "flex";
+    github.style.display = "flex";
+  } else {
+    header.classList.remove("on");
+    topArrow.style.display = "none";
+    github.style.display = "none";
+  }
+});
