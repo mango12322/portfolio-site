@@ -26,14 +26,14 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header on">
+    <header class="header">
       <div class="header-inner">
         <nav class="nav">
           <h1 class="nav-logo"><a href="#">Sunghyen Wep Portfolio</a></h1>
           <ul class="gnb-list">
-            <li class="gng-item"><a href="#">ABOUT ME</a></li>
-            <li class="gng-item"><a href="#">WORK</a></li>
-            <li class="gng-item"><a href="#">CONTACT</a></li>
+            <li class="gnb-item"><a href="#about">ABOUT ME</a></li>
+            <li class="gnb-item"><a href="#work">WORK</a></li>
+            <li class="gnb-item"><a href="#contact">CONTACT</a></li>
           </ul>
         </nav>
       </div>
@@ -53,7 +53,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
       <div class="about-inner">
         <h1 class="about-title">ABOUT ME</h1>
         <div class="about-content">
@@ -147,8 +147,57 @@
       </div>
     </section>
 
-    <!-- <i class="fa-solid fa-arrow-up"></i> -->
-    <!-- <i class="fa-brands fa-github"></i> -->
+    <section id="work" class="work">
+      <div class="work-inner">
+        <h5 class="work-title">WORK</h5>
+        <div class="work-list">
+          <a
+            href="https://mango12322.github.io/port-01/"
+            target="_blank"
+            class="work-item"
+          >
+            <div class="item-img"></div>
+            <div class="item-title">Travel</div>
+            <div class="item-skill">Web | HTML5 · CSS3 · Jquery · 반응형</div>
+          </a>
+          <a
+            href="https://mango12322.github.io/port-02/"
+            target="_blank"
+            class="work-item"
+          >
+            <div class="item-img"></div>
+            <div class="item-title">오가닉</div>
+            <div class="item-skill">Web | HTML5 · CSS3 · JS · 반응형</div>
+          </a>
+          <a class="work-item">
+            <div class="item-img"></div>
+            <div class="item-title">port-03</div>
+            <div class="item-skill">Web | HTML5 · SCSS · Js · 반응형</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact" class="footer">
+      <div class="footer-inner">
+        <h3 class="footer-title">
+          함께 성장할 수 있는 웹 퍼블리셔를 꿈꾸는 방성현입니다.
+        </h3>
+        <p class="footer-email">bkn007@naver.com</p>
+        <p class="footer-text">배움의 자세로 책임감 있게 임하겠습니다.</p>
+        <p class="footer-text">편하게 연락 주세요!</p>
+        <div class="copyright">
+          <p class="copyright-txt">© 2026 Sunghyen’s.com</p>
+        </div>
+      </div>
+    </footer>
+
+    <a href="https://github.com/mango12322" target="_blank" class="github">
+      <i class="fa-brands fa-github"></i>
+    </a>
+    <div class="top-arrow">
+      <i class="fa-solid fa-arrow-up"></i>
+    </div>
     <script
       src="https://kit.fontawesome.com/d801000d0a.js"
       crossorigin="anonymous"

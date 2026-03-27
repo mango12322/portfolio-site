@@ -20,3 +20,12 @@ const swiper = new Swiper(".about-slider", {
     },
   },
 });
+
+// top-Arrow
+const topArrow = document.querySelector(".top-arrow");
+topArrow.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
