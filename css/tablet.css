@@ -1,3 +1,77 @@
 /* 태블릿 */
 @media (max-width: 1024px) {
+  /* header */
+  .header-inner {
+    padding: 0 30px;
+  }
+  .nav-logo {
+    font-size: 18px;
+  }
+  .gnb-item {
+    font-size: 18px;
+  }
+
+  /* main */
+  .main-inner {
+    padding: 0 40px;
+  }
+  .main-title {
+    font-size: 60px;
+  }
+  .main-subtitle {
+    font-size: 18px;
+  }
+
+  /* about */
+  .about-inner {
+    padding: 85px 40px;
+  }
+  .about-title {
+    font-size: 30px;
+  }
+  .profile-text {
+    font-size: 16px;
+  }
+
+  /* work */
+  .work-inner {
+    padding: 85px 40px;
+  }
+  .work-title {
+    font-size: 30px;
+  }
+  .img-overlay {
+    font-size: 12px;
+  }
+  .item-title {
+    font-size: 20px;
+  }
+  .item-skill {
+    font-size: 16px;
+  }
+
+  /* footer */
+  .footer-inner {
+    padding: 0 40px;
+  }
+  .footer-title {
+    font-size: 30px;
+  }
+  .footer-email {
+    font-size: 60px;
+  }
+  .footer-text {
+    font-size: 16px;
+  }
+  .copyright {
+    left: 40px;
+  }
+
+  /* top-arrow , github*/
+  .top-arrow,
+  .github {
+    width: 40px;
+    height: 40px;
+    right: 40px;
+  }
 }

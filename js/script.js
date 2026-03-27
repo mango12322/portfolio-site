@@ -45,3 +45,31 @@ window.addEventListener("scroll", () => {
     github.style.display = "none";
   }
 });
+
+// hamburger
+const hamburger = document.querySelector(".hamburger");
+const gnb = document.querySelector(".gnb-list");
+const overlay = document.querySelector(".overlay");
+const gnbLinks = document.querySelectorAll(".gnb-item a");
+
+hamburger.addEventListener("click", () => {
+  gnb.classList.toggle("active");
+  hamburger.classList.toggle("active");
+  overlay.classList.toggle("active");
+});
+
+// 배경(overlay) 클릭 시 모든 창 닫기
+overlay.addEventListener("click", () => {
+  gnb.classList.remove("active");
+  hamburger.classList.remove("active");
+  overlay.classList.remove("active");
+});
+
+gnbLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    // 메뉴를 클릭하면 active 클래스를 제거하여 창을 닫습니다.
+    gnb.classList.remove("active");
+    hamburger.classList.remove("active");
+    overlay.classList.remove("active");
+  });
+});
