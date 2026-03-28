@@ -12,11 +12,6 @@
   .nav-logo {
     font-size: 14px;
   }
-  .hamburger {
-    display: flex;
-    z-index: 1002;
-  }
-
   .gnb-list {
     position: fixed;
     top: 0;
@@ -36,6 +31,10 @@
   .gnb-list.active {
     right: 0;
   }
+  .hamburger {
+    display: flex;
+    z-index: 1002;
+  }
   .hamburger.active span:nth-child(1) {
     transform: translateY(9px) rotate(45deg);
   }
@@ -45,18 +44,16 @@
   .hamburger.active span:nth-child(3) {
     transform: translateY(-9px) rotate(-45deg);
   }
-
   .overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* 반투명한 검정색 */
-    z-index: 999; /* 메뉴(1001)보다는 낮고 일반 콘텐츠보다는 높게 */
-    display: none; /* 평소엔 숨김 */
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
   }
-
   .overlay.active {
     display: block; /* 메뉴가 열리면 보이게 함 */
   }
